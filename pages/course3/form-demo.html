@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+
+    <style>
+        main{
+            justify-items: center;
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
     <header></header>
     <nav></nav>
     <main>
+        <img src="../../images/intellilogics.jpg" alt="">
+        <h1>Sign Up</h1>
 
+        <form action="server" method="post">
+            <div>
+                <label for="name">Name</label><br>
+                 <input type="text" name="name" id="name" required>
+            </div>
+    
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <label for="confirmpassword">Confirm Password</label><br>
+                <input type="password" name="confirmpassword" id="confirmpassword">
+            </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
     </main>
     <footer></footer>
 </body>
