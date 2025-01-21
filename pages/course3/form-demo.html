@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 
     <style>
-        main{
+        main {
             justify-items: center;
             align-content: center;
         }
     </style>
 </head>
+
 <body>
     <header></header>
     <nav></nav>
@@ -22,9 +24,9 @@
         <form action="server" method="post">
             <div>
                 <label for="name">Name</label><br>
-                 <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" required>
             </div>
-    
+
             <div>
                 <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" required>
@@ -40,9 +42,20 @@
                 <input type="password" name="confirmpassword" id="confirmpassword">
             </div>
 
-          <button type="submit">Sign Up</button>
+            <fieldset id="gender">
+                <figcaption>Gender</figcaption>
+                <label> <input type="radio" value="m" name="gender" checked> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="f"> Female
+
+                </label>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
         </form>
     </main>
     <footer></footer>
 </body>
+
 </html>
