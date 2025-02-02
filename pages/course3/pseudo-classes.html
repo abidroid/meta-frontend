@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .container {
+           
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        .container:hover {
+            background-color: blue;
+        }
+
+        .btn:active {
+            background-color: green;
+        }
+
+        li:first-of-type {
+            color: red;
+        }
+
+        li:last-of-type {
+            color: green;
+        }
+
+        li:nth-child(2) {
+            color: blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <h1>Pseudo Classes</h1>
+        <div class="container"></div>
+        <button class="btn">Click Me</button>
+
+        <ul>
+            <li>Abid</li>
+            <li>Zahid</li>
+            <li>Shahid</li>
+            <li>Arham</li>
+            <li>Faseeh</li>
+            <li>Saad</li>
+        </ul>
+    </main>
+    
+</body>
+</html>
