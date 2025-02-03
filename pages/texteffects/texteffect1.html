@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects 1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .text {
+            width: 300px;
+
+            background-color: #f1f1f1;
+            border: 1px solid #b01111;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .text:hover {
+            overflow: visible;
+            white-space: normal;
+        }
+
+        .vert {
+            writing-mode: vertical-lr;
+        }
+
+        .txt {
+            width: 100px;
+            overflow: hidden;
+            border: 2px solid red;
+            word-wrap: break-word;
+        }
+
+        .abid {
+            text-shadow: 0 0 30px green,
+                0 0 5px white;
+
+            /*
+            1 -> x-coordinate
+            2 -> y-coordinate
+            3 -> blur-radius
+            4 -> shadow color
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis qui ipsum blanditiis iure, modi
+        corrupti.</p>
+    <br><br>
+    <p class="vert">12 - 15 times per week</p>
+    <br><br>
+    <p class="txt">this is some random text with some sljdflasjdflsjflsjdflsdjf word</p>
+
+    <br><br>
+    <h1 class="abid">Muhammad Abid</h1>
+</body>
+
+</html>
