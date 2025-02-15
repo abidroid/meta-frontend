@@ -6,6 +6,24 @@
     <title>Decission Making</title>
 </head>
 <body>
-    
+    <script>
+        // user input using prompt
+        // let name = prompt("What is your name?");
+        // alert("Hello " + name);
+
+        // Fizz Buzz
+         let number = prompt("Enter a number: ");
+         let numberInt = parseInt(number);
+
+            if (numberInt % 3 === 0 && numberInt % 5 === 0) {
+                alert("Fizz Buzz");
+            } else if (numberInt % 3 === 0) {
+                alert("Fizz");
+            } else if (numberInt % 5 === 0) {
+                alert("Buzz");
+            } else {
+                alert(numberInt);
+            }
+    </script>
 </body>
 </html>
