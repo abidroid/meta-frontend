@@ -27,28 +27,38 @@
 
         // Number Guessing game
         // Generate a random number between 1 and 100
-        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        // let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-        let input = prompt("Enter a number between 1 and 100");
-        let guess = parseInt(input);
+        // let input = prompt("Enter a number between 1 and 100");
+        // let guess = parseInt(input);
 
-        let attempts = 1;
-        if( guess == randomNumber){
-            document.write("Congratulations! You guessed the number in " + attempts + " attempts");
-        } else {
-            while(guess != randomNumber){
-                if(guess < randomNumber){
-                    input = prompt("Enter a higher number");
-                } else {
-                    input = prompt("Enter a lower number");
-                }
+        // let attempts = 1;
+        // if( guess == randomNumber){
+        //     document.write("Congratulations! You guessed the number in " + attempts + " attempts");
+        // } else {
+        //     while(guess != randomNumber){
+        //         if(guess < randomNumber){
+        //             input = prompt("Enter a higher number");
+        //         } else {
+        //             input = prompt("Enter a lower number");
+        //         }
 
-                guess = parseInt(input);
-                attempts++;
-            }
+        //         guess = parseInt(input);
+        //         attempts++;
+        //     }
 
-            document.write("Congratulations! You guessed the number in " + attempts + " attempts");
+        //     document.write("Congratulations! You guessed the number in " + attempts + " attempts");
+        // }
+
+        function br(){
+            document.write("<br>");
         }
+
+        document.write(1 + "2" + "3");
+        br();
+        document.write("5" - 2);
+        br();
+        document.write(10 + "5" - 2);
 
     </script>
 </body>
