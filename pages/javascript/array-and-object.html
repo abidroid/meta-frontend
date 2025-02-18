@@ -9,23 +9,48 @@
 
 <body>
     <script>
-        var clothes = [];
-        clothes.push("shirt")
-        clothes.push("pant")
-        clothes.push("tie")
-        clothes.push("cap")
-        clothes.push("handkerchief")
-        clothes.pop()
-        clothes.push("sweater")
-        document.write(clothes[2])
+        // var clothes = [];
+        // clothes.push("shirt")
+        // clothes.push("pant")
+        // clothes.push("tie")
+        // clothes.push("cap")
+        // clothes.push("handkerchief")
+        // clothes.pop()
+        // clothes.push("sweater")
+        // document.write(clothes[2])
 
-        var favCar = {}
-        favCar.color = "Grey"
-        favCar.conertible = true
-        favCar.make = "Toyota"
+        // var favCar = {}
+        // favCar.color = "Grey"
+        // favCar.conertible = true
+        // favCar.make = "Toyota"
 
-        document.write("<br>")
-        document.write(favCar)
+        // document.write("<br>")
+        // document.write(favCar)
+
+        function br(){
+            document.write("<br>")
+        }
+        var numbers = [ 88, 34, 97, 44, 87 ]
+        var sum = 0
+
+        for( var i = 0; i < numbers.length; i++ ) {
+            sum += numbers[i]
+        }
+
+        document.write(sum)
+        br()
+        var max = numbers[0]
+        for( var i = 0; i < numbers.length; i++ ) {
+            if( numbers[i] > max ) {
+                max = numbers[i]
+            }
+            document.write(numbers[i] + " ")
+        }   
+
+        br()
+        document.write(max)
+
+
     </script>
 </body>
 
