@@ -30,6 +30,7 @@
         function br(){
             document.write("<br>")
         }
+
         var numbers = [ 88, 34, 97, 44, 87 ]
         // var sum = 0
 
@@ -51,12 +52,26 @@
         // document.write(max)
 
         // even numbers in array
-        for( var i = 0; i < numbers.length; i++ ) {
-            if( numbers[i] % 2 == 0 ) {
-                document.write(numbers[i] + " ")
+        // for( var i = 0; i < numbers.length; i++ ) {
+        //     if( numbers[i] % 2 == 0 ) {
+        //         document.write(numbers[i] + " ")
+        //     }
+        // }
+
+        // Bubble Sort
+        br()
+        for( var s = 0; s < numbers.length; s++ ) {
+           
+            for( var c = 0; c < numbers.length - (s+1); c++ ) {
+                if( numbers[c] > numbers[c+1] ) {
+                    var temp = numbers[c]
+                    numbers[c] = numbers[c+1]
+                    numbers[c+1] = temp
+                }
             }
         }
 
+        document.write(numbers)
     </script>
 </body>
 
