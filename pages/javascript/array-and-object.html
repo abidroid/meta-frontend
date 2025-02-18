@@ -31,25 +31,31 @@
             document.write("<br>")
         }
         var numbers = [ 88, 34, 97, 44, 87 ]
-        var sum = 0
+        // var sum = 0
 
-        for( var i = 0; i < numbers.length; i++ ) {
-            sum += numbers[i]
-        }
+        // for( var i = 0; i < numbers.length; i++ ) {
+        //     sum += numbers[i]
+        // }
 
-        document.write(sum)
-        br()
-        var max = numbers[0]
+        // document.write(sum)
+        // br()
+        // var max = numbers[0]
+        // for( var i = 0; i < numbers.length; i++ ) {
+        //     if( numbers[i] > max ) {
+        //         max = numbers[i]
+        //     }
+        //     document.write(numbers[i] + " ")
+        // }   
+
+        // br()
+        // document.write(max)
+
+        // even numbers in array
         for( var i = 0; i < numbers.length; i++ ) {
-            if( numbers[i] > max ) {
-                max = numbers[i]
+            if( numbers[i] % 2 == 0 ) {
+                document.write(numbers[i] + " ")
             }
-            document.write(numbers[i] + " ")
-        }   
-
-        br()
-        document.write(max)
-
+        }
 
     </script>
 </body>
