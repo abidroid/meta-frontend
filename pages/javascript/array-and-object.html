@@ -59,19 +59,39 @@
         // }
 
         // Bubble Sort
-        br()
-        for( var s = 0; s < numbers.length; s++ ) {
+        // br()
+        // for( var s = 0; s < numbers.length; s++ ) {
            
-            for( var c = 0; c < numbers.length - (s+1); c++ ) {
-                if( numbers[c] > numbers[c+1] ) {
-                    var temp = numbers[c]
-                    numbers[c] = numbers[c+1]
-                    numbers[c+1] = temp
-                }
+        //     for( var c = 0; c < numbers.length - (s+1); c++ ) {
+        //         if( numbers[c] > numbers[c+1] ) {
+        //             var temp = numbers[c]
+        //             numbers[c] = numbers[c+1]
+        //             numbers[c+1] = temp
+        //         }
+        //     }
+        // }
+
+        // document.write(numbers)
+
+        // Linear Search
+        br()
+        var number = prompt("Enter a number to search in array") 
+        var intNumber = parseInt(number)
+
+        var index = -1
+
+        for( var i = 0; i < numbers.length; i++ ) {
+            if( numbers[i] == intNumber ) {
+                index = i
+                break
             }
         }
 
-        document.write(numbers)
+        if( index == -1 ) {
+            document.write("Number not found")
+        } else {
+            document.write("Number found at index " + index)
+        }
     </script>
 </body>
 
