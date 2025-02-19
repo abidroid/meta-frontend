@@ -26,13 +26,22 @@
         function countProperties(obj) {
             // Your code here
             return Object.keys(obj).length;
-            
+
         }
         br();
         document.write(countProperties({ a: 1, b: 2, c: 3 })); // 3
         br();
         document.write(countProperties({})); // 0
 
+        function mergeObjects(obj1, obj2) {
+            // Your code here
+            return Object.assign(obj1, obj2);
+        }
+
+        br();
+        var mergedObject = mergeObjects({ a: 1, b: 2 }, { b: 3, c: 4 });
+        document.write(JSON.stringify(mergedObject));
+        // Output: {a: 1, b: 3, c: 4}
 
 
     </script>
