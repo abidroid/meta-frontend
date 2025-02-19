@@ -43,6 +43,21 @@
         document.write(JSON.stringify(mergedObject));
         // Output: {a: 1, b: 3, c: 4}
 
+        function objectToArray(obj) {
+            // Your code here
+            //return Object.entries(obj);
+
+            var arr = [];
+            for (var key in obj) {
+                arr.push([key, obj[key]]);
+            }
+            return arr;
+        }
+
+        br();
+        var arrResult = objectToArray({ name: "Alice", age: 25 });
+        document.write(JSON.stringify(arrResult));
+        // Output: [["name", "Alice"], ["age", 25]]
 
     </script>
 </body>
