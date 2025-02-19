@@ -13,6 +13,11 @@
         function br() {
             document.write("<br>");
         }
+
+        function display( obj ) {
+            document.write(JSON.stringify(obj));
+        }
+
         function hasProperty(obj, key) {
             // Your code here
             return obj.hasOwnProperty(key);
@@ -69,6 +74,14 @@
         removeProperty(obj, "b");
         document.write(JSON.stringify(obj));
         // Output: {a: 1, c: 3}
+
+        function keysAndValues(obj) {
+            // Your code here
+            return [Object.keys(obj), Object.values(obj)];
+        }
+        br();
+        display(keysAndValues({ a: 1, b: 2, c: 3 }));
+        // Output: [["a", "b", "c"], [1, 2, 3]]
 
     </script>
 </body>
