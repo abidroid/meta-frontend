@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Challenges</title>
+</head>
+
+<body>
+    <script>
+
+        function br(){
+            document.write("<br>");
+        }   
+        function hasProperty(obj, key) {
+            // Your code here
+            return obj.hasOwnProperty(key);
+        }
+
+        document.write(hasProperty({ name: "Alice", age: 25 }, "name")); // true
+        br();
+        document.write(hasProperty({ name: "Alice", age: 25 }, "gender")); // false
+
+
+        
+
+    </script>
+</body>
+
+</html>
