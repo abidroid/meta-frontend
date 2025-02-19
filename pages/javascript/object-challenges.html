@@ -115,6 +115,39 @@
         display(groupByAge(people));
         // Output: {25: ["Alice", "Charlie"], 30: ["Bob"]}
 
+        function mostFrequentValue(arr, key) {
+            // Your code here
+            var obj = {};
+            for (var i = 0; i < arr.length; i++) {
+                var value = arr[i][key];
+                if (obj[value] === undefined) {
+                    obj[value] = 0;
+                }
+                obj[value]++;
+            }
+
+            var max = 0;
+            var result = "";
+            for (var k in obj) {
+                if (obj[k] > max) {
+                    max = obj[k];
+                    result = k;
+                }
+            }
+            return result;
+        }
+
+        const data = [
+            { category: "A", value: 10 },
+            { category: "B", value: 15 },
+            { category: "A", value: 10 },
+            { category: "C", value: 5 },
+            { category: "A", value: 10 }
+        ];
+
+        br ();
+        document.write(mostFrequentValue(data, "category"));
+        // Output: "A"
 
     </script>
 </body>
