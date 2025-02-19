@@ -59,6 +59,17 @@
         document.write(JSON.stringify(arrResult));
         // Output: [["name", "Alice"], ["age", 25]]
 
+        function removeProperty(obj, key) {
+            // Your code here
+            delete obj[key];
+        }
+
+        br();
+        const obj = { a: 1, b: 2, c: 3 };
+        removeProperty(obj, "b");
+        document.write(JSON.stringify(obj));
+        // Output: {a: 1, c: 3}
+
     </script>
 </body>
 
