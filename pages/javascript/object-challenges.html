@@ -93,6 +93,29 @@
         document.write(areObjectsEqual({ a: 1, b: 2 }, { a: 1, b: 2 })); // true
         document.write(areObjectsEqual({ a: 1, b: 2 }, { a: 1, c: 3 })); // false
 
+        function groupByAge(people) {
+            // Your code here
+            var result = {};
+            for (var i = 0; i < people.length; i++) {
+                var age = people[i].age;
+                if (result[age] === undefined) {
+                    result[age] = [];
+                }
+                result[age].push(people[i].name);
+            }
+            return result;
+        }
+
+        const people = [
+            { name: "Alice", age: 25 },
+            { name: "Bob", age: 30 },
+            { name: "Charlie", age: 25 }
+        ];
+        br();
+        display(groupByAge(people));
+        // Output: {25: ["Alice", "Charlie"], 30: ["Bob"]}
+
+
     </script>
 </body>
 
