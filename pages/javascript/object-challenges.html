@@ -10,9 +10,9 @@
 <body>
     <script>
 
-        function br(){
+        function br() {
             document.write("<br>");
-        }   
+        }
         function hasProperty(obj, key) {
             // Your code here
             return obj.hasOwnProperty(key);
@@ -23,7 +23,17 @@
         document.write(hasProperty({ name: "Alice", age: 25 }, "gender")); // false
 
 
-        
+        function countProperties(obj) {
+            // Your code here
+            return Object.keys(obj).length;
+            
+        }
+        br();
+        document.write(countProperties({ a: 1, b: 2, c: 3 })); // 3
+        br();
+        document.write(countProperties({})); // 0
+
+
 
     </script>
 </body>
