@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defensive Programming</title>
+</head>
+
+<body>
+    <script>
+
+        function letterFinder(word, match) {
+            var condition1 = typeof (word) == "string" && word.length >= 2
+            var condition2 = typeof (match) == "string" && match.length == 1
+
+            if (condition1 == true && condition2 == true) {
+                for (var i = 0; i < word.length; i++) {
+                    if (word[i] == match) {
+                        //if the current character at position i in the word is equal to the match
+                        document.write('Found the ', match, ' at ', i)
+                        document.write('<br>')
+                    } else {
+                        document.write('---No match found at ', i)
+                        document.write('<br>')
+                    }
+                }
+            }
+            else {
+                console.log("Please pass correct arguments to the function.")
+                document.write("<br/>")
+            }
+
+
+        }
+
+        letterFinder("cat", "c")
+    </script>
+</body>
+
+</html>
