@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <h1>OOP Concepts</h1>
+    <script>
+        console.log("Yo")
+        console.log("Yo")
+
+        class Student {
+            constructor(name, mobile, course){
+                this.name = name;
+                this.mobile = mobile;
+                this.course = course;
+            }
+
+            getStudentDetails(){
+                return `Name: ${this.name}, Mobile: ${this.mobile}, Course: ${this.course}`
+            }
+        }
+
+        let student1 = new Student("John Doe", "1234567890", "Computer Science");
+        let student2 = new Student("Khan", "0987654321", "Information Technology");
+        let student3 = new Student("Doe", "1234567890", "Computer Science");
+        let student4 = new Student("Khan", "0987654321", "Information Technology"); 
+
+        let students = [student1, student2, student3, student4];
+        document.write(JSON.stringify(students));
+
+        // for(let student of students){
+        //     document.write(JSON.stringify(student));
+        // }
+    </script>
+</body>
+</html>
