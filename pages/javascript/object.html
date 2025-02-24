@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+
+        var purchase1 = {
+            shoes: 100,
+            govTax: 1.2,
+            totalPrice: function() {
+                var calculation = purchase1.shoes * purchase1.govTax;
+                console.log("Total price: ", calculation);
+            }
+        }
+
+        purchase1.totalPrice();
+
+        var purchase2 = {
+            shoes: 50,
+            govTax: 1.2,
+            totalPrice: function() {
+                var calculation = purchase2.shoes * purchase2.govTax;
+                console.log("Total price: ", calculation);
+            }
+        }
+
+        purchase2.totalPrice();
+        /*
+        the above 2 functions are identical, 
+        we can replace the object reference with this keyword
+        */
+    </script>
+</body>
+</html>
