@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Literals</title>
 </head>
+
 <body>
     <h1>Template Literals</h1>
     <script>
@@ -13,7 +15,18 @@
 
         const fullName = `${fistName} ${lastName}`;
         console.log(fullName);
-    
+
+        const message = `Hello,
+This is a multi-line string
+in JavaScript.`;
+        console.log(message);
+
+        const a = 10;
+        const b = 20;
+        console.log(`The sum of ${a} and ${b} is ${a + b}.`);
+        // Output: The sum of 10 and 20 is 30.
+
     </script>
 </body>
+
 </html>
