@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Structures</title>
 </head>
+
 <body>
     <h1>Data Structures</h1>
 
     <script>
         let friends = ["salam", "wasil", "daud", "sami"];
 
-        friends.forEach( (friend, index) => {
+        friends.forEach((friend, index) => {
             console.log(`${friend} is at index ${index}`)
+        });
+
+
+        /*
+            The filter() method
+            Another very useful method on the array is the filter() method. 
+            It filters your arrays based on a specific test. 
+            Those array items that pass the test are returned.
+        */
+        const nums = [0, 10, 20, 30, 40, 50];
+        let alteredNums = [];
+        alteredNums = nums.filter((number) => {
+
+            return number > 20;
         })
+
+        console.log(alteredNums)
     </script>
 </body>
+
 </html>
