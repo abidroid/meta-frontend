@@ -17,6 +17,13 @@
 
         // Output
         // ['apple', 'pear', 'plum', 'blueberry', 'strawberry']
+
+        // It's also easy to join objects:  
+
+        const flying = { wings: 2 }
+        const car = { wheels: 4 }
+        const flyingCar = { ...flying, ...car }
+        console.log(flyingCar) // {wings: 2, wheels: 4}
     </script>
 </body>
 
