@@ -8,7 +8,14 @@
 <body>
     <h1>Dom Manipulation</h1>
     <script>
-        
+        console.log('Testing');
+
+        const h2 = document.createElement('h2');
+        h2.innerText = 'This is a new h2 tag';
+        h2.setAttribute('id', 'heading2');
+        h2.setAttribute('class', 'secondary');
+        document.body.appendChild(h2);
+
     </script>
 </body>
 </html>
