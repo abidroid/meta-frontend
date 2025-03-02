@@ -62,6 +62,16 @@
         </div>
         <script>
 
+            var value = 0;
+            var counter = document.getElementById('counter');
+            var increment = document.getElementById('increment');
+            var decrement = document.getElementById('decrement');
+
+            increment.addEventListener('click', function(){
+                value += 1
+
+                counter.innerHTML = value;
+            })
         </script>
     </main>
 </body>
