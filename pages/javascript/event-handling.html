@@ -59,6 +59,8 @@
                 <button id="increment">Increment</button>
                 <button id="decrement">Decrement</button>
             </div>
+
+            <button id="reset">Reset</button>
         </div>
         <script>
 
@@ -71,6 +73,12 @@
                 value += 1
 
                 counter.innerHTML = value;
+            })
+
+            decrement.addEventListener('click', function(){
+                value -= 1
+
+                counter.innerHTML = value
             })
         </script>
     </main>
