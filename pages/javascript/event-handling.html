@@ -68,6 +68,7 @@
             var counter = document.getElementById('counter');
             var increment = document.getElementById('increment');
             var decrement = document.getElementById('decrement');
+            const reset = document.getElementById('reset');
 
             increment.addEventListener('click', function(){
                 value += 1
@@ -78,6 +79,11 @@
             decrement.addEventListener('click', function(){
                 value -= 1
 
+                counter.innerHTML = value
+            })
+
+            reset.addEventListener('click', function(){
+                value = 0;
                 counter.innerHTML = value
             })
         </script>
