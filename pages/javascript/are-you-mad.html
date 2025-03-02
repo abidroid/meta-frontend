@@ -6,6 +6,22 @@
     <title>Are You Mad</title>
 </head>
 <body>
-    
+    <h1>Are you mad?</h1>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+
+    <script>
+        const yesButton = document.getElementById('yes');
+        const noButton = document.getElementById('no');
+
+        yesButton.addEventListener('mouseenter', function(){
+            yesButton.innerHTML = 'Yes';
+            noButton.innerHTML = 'No';
+        })
+        noButton.addEventListener('mouseenter', function(){
+            yesButton.innerHTML = 'No';
+            noButton.innerHTML = 'Yes';
+        })
+    </script>
 </body>
 </html>
