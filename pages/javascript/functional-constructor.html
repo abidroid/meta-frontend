@@ -27,8 +27,22 @@
         let ali = new Student("Ali Khan", "Flutter", "0332-9964484");
         //ali.display()
 
+        function Car(brand, model){
+            this.brand = brand;
+            this.model = model;
+        }
+        // Adding method to prototype
+        Car.prototype.displayInfo = function(){
+            console.log(`Car: ${this.brand} ${this.model}`);
+            
+        };
 
-        
+        const car1 = new Car('Toyota', 'Corolla');
+        const car2 = new Car('Honda', 'Civic');
+
+        car1.displayInfo();
+        car2.displayInfo();
+
     </script>
 </body>
 </html>
