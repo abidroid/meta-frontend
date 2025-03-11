@@ -76,8 +76,26 @@
         const emp1 = new Employee('John Doe', 'Software Engineer', 80000);
         const emp2 = new Employee('Jane Smith', 'Project Manager', 95000);
 
-        emp1.getDetails();
-        emp2.getDetails();
+        //emp1.getDetails();
+        //emp2.getDetails();
+        
+
+        function Product(name, price){
+            this.name = name;
+            this.price = price;
+        }
+
+        // Adding method to prototype
+        Product.prototype.getDiscountedPrice = function(discount){
+            return this.price - (this.price * discount / 100);
+        }
+
+        const product1 = new Product('Laptop', 1000);
+        const product2 = new Product('Headphones', 200);
+
+        console.log(product1.getDiscountedPrice(10));
+        console.log(product2.getDiscountedPrice(15));
+        
         
     </script>
 </body>
