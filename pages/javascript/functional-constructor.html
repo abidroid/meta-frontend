@@ -55,6 +55,29 @@
 
         console.log(student1);
         console.log(student2);
+
+        // TODO: write some practical examples
+
+        function Employee( name, position, salary) {
+            this.name = name;
+            this.position = position;
+            this.salary = salary;
+
+            this.getDetails = function(){
+                console.log(`${this.name} is a
+                        ${this.position}
+                        earning $${this.salary}
+                        per year.
+                `);
+                
+            }
+        }
+
+        const emp1 = new Employee('John Doe', 'Software Engineer', 80000);
+        const emp2 = new Employee('Jane Smith', 'Project Manager', 95000);
+
+        emp1.getDetails();
+        emp2.getDetails();
         
     </script>
 </body>
