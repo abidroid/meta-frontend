@@ -11,20 +11,20 @@
 
     <script>
 
-        function Student(name, course, mobile){
+        // function Student(name, course, mobile){
 
-            this.name = name;
-            this.course = course;
-            this.mobile = mobile;
+        //     this.name = name;
+        //     this.course = course;
+        //     this.mobile = mobile;
 
-            this.display = function(){
-                console.log(`Name: ${this.name}`);
-                console.log(`Course: ${this.course}`);
-                console.log(`Mobile: ${this.mobile}`);
-            }
-        }
+        //     this.display = function(){
+        //         console.log(`Name: ${this.name}`);
+        //         console.log(`Course: ${this.course}`);
+        //         console.log(`Mobile: ${this.mobile}`);
+        //     }
+        // }
 
-        let ali = new Student("Ali Khan", "Flutter", "0332-9964484");
+        // let ali = new Student("Ali Khan", "Flutter", "0332-9964484");
         //ali.display()
 
         function Car(brand, model){
@@ -40,9 +40,22 @@
         const car1 = new Car('Toyota', 'Corolla');
         const car2 = new Car('Honda', 'Civic');
 
-        car1.displayInfo();
-        car2.displayInfo();
+        //car1.displayInfo();
+        //car2.displayInfo();
 
+        // using default values in constructor
+
+        function Student( name = 'Unknown', grade = 'NotAssigned'){
+            this.name = name;
+            this.grade = grade;
+        }
+
+        const student1 = new Student('Ali', 'A+');
+        const student2 = new Student();
+
+        console.log(student1);
+        console.log(student2);
+        
     </script>
 </body>
 </html>
