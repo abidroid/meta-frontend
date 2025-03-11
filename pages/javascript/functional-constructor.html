@@ -16,10 +16,19 @@
             this.name = name;
             this.course = course;
             this.mobile = mobile;
+
+            this.display = function(){
+                console.log(`Name: ${this.name}`);
+                console.log(`Course: ${this.course}`);
+                console.log(`Mobile: ${this.mobile}`);
+            }
         }
 
         let ali = new Student("Ali Khan", "Flutter", "0332-9964484");
-        console.log(ali);
+        //ali.display()
+
+
+        
     </script>
 </body>
 </html>
