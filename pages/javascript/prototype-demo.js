@@ -1,22 +1,25 @@
+var person = {
+    getFullName: function(){
+        return `${this.firstName} ${this.lastName}`;
+
+    }
+}
+
 
 var student = {
     firstName: "Muhammad",
     lastName: "Abid",
 
-    getFullName: function(){
-        return `${this.firstName} ${this.lastName}`;
-    }
 }
 
 var employee = {
     firstName: "Ali",
     lastName: "Khan",
-
-    getFullName: function(){
-        return `${this.firstName} ${this.lastName}`;
-
-    }
+    __proto__: person,// employee inheriting person
 }
+
+// student inheriting person
+student.__proto__ = person;
 
 console.log(student.getFullName());
 console.log(employee.getFullName());
