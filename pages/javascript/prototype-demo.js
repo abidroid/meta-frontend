@@ -15,7 +15,7 @@ var student = {
 var employee = {
     firstName: "Ali",
     lastName: "Khan",
-    __proto__: person,// employee inheriting person
+    __proto__: person, // employee inheriting person
 }
 
 // student inheriting person
