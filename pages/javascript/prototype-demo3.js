@@ -1,5 +1,11 @@
 
-function Animal (){}
+function Animal (){
+
+    this.sleep = function(){
+        console.log('Sleeping...');
+        
+    }
+}
 
 Animal.prototype.move = function(){
     console.log('Moving...');
@@ -7,14 +13,14 @@ Animal.prototype.move = function(){
 
 const animal = new Animal();
 
-function Cat(){}
-function Lion(){}
-
-
-Object.setPrototypeOf(Cat, Animal);
-Object.setPrototypeOf(Lion, Animal);
+function Cat(){
+    this.__proto__ = Animal;
+}
+function Lion(){
+    this.__proto__ = Animal;
+}
 
 const mano = new Cat();
 const sher = new Lion();
 
-mano.move();
+mano.sleep();
